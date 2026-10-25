@@ -91,6 +91,7 @@ window.siteContent = {
     },
     {
       title: "Vendor Package File Organization & Renaming Tool (VBA)",
+      permissionNote: "I consulted with Fluor and received permission to share the project material shown here.",
       subtitle: "Fluor Mining & Metals · Excel VBA",
       image: { src: "./assets/vba/folder-structure.png", alt: "Project folder structure: package folders contain vendor PDFs and metadata workbooks, with a shared manifest workbook." },
       summary: ["I built an Excel VBA application to turn vendor document designations into readable filenames using titles and revision information from metadata workbooks. It processes a project directory containing separate vendor package folders and generates a manifest for review before changing any filenames."],
@@ -143,14 +144,6 @@ window.siteContent = {
             "A valid metadata title could still produce a filename or full path that was too long for the workflow. I added a separate dictionary to track proposed filename and path lengths. The manifest highlights affected rows and records the lengths so the user can shorten the names before confirming the rename operation."
           ],
           figure: { src: "./assets/vba/manifest-errors.png", label: "path-length error example", caption: "Path-length exceptions highlighted in the manifest for manual correction.", alt: "Manifest with red-highlighted rows and filename and path-length warnings.", width: 1881, height: 776 }
-        },
-        {
-          heading: "Before and after",
-          galleryHeading: "File naming comparison",
-          gallery: [
-            { src: "./assets/vba/files-before.png", label: "Before — vendor designations", caption: "Package files named primarily by document designation and revision.", alt: "Vendor package folder before renaming, with coded document filenames." },
-            { src: "./assets/vba/files-after.png", label: "After — readable document titles", caption: "The same package after applying titles from the reviewed metadata manifest.", alt: "Vendor package folder after renaming, with readable document titles." }
-          ]
         }
       ]
     },
@@ -207,6 +200,7 @@ window.siteContent = {
     },
     {
       title: "Mining Infrastructure Modelling",
+      permissionNote: "I consulted with Fluor and received permission to share the project material shown here.",
       subtitle: "Fluor Mining & Metals · SOLIDWORKS",
       image: { src: "./assets/mining/dump-pocket.png", alt: "Dump-pocket CAD model with an adjustable material loading point." },
       summary: [

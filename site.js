@@ -209,6 +209,7 @@
       const information = document.createElement('div');
       information.className = 'project-information';
       information.append(text('h3', 'project-subheading', 'Project overview'));
+      if (project.permissionNote) information.append(text('p', 'project-copy', project.permissionNote));
       for (const paragraph of project.summary || ['Project overview coming soon.']) information.append(text('p', 'project-copy', paragraph));
       if (project.system) {
         information.append(text('h3', 'project-subheading', project.system.heading));
